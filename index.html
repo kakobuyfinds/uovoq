@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#183d46">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Wemimi spreadsheet po polsku: kategorie, linki do produktów, rozmiary i zdjęcia QC. Sprawdź, jak porównywać ubrania, buty oraz akcesoria przed zakupem.">
+  <title>Wemimi spreadsheet — kategorie, rozmiary i poradnik QC</title>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="Wemimi spreadsheet — wybieraj z większą pewnością">
+  <meta property="og:description" content="Polski przewodnik po kategoriach, wymiarach, zdjęciach QC i porównywaniu produktów. Przejdź do katalogu CAFANS.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <meta property="og:image:alt" content="Czerwony but sportowy Nike na czerwonym tle">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wemimi spreadsheet — poradnik po polsku">
+  <meta name="twitter:description" content="Kategorie, rozmiary i kontrola zdjęć produktów przed zakupem.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=1200&amp;q=80">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="dns-prefetch" href="//cdn.theluxurycloset.com">
+  <link rel="dns-prefetch" href="//assets.christiandior.com">
+  <!--
+    Plik: index.html.
+    Nie ustawiono canonical ani og:url: docelowy adres publikacji nie został podany.
+    Po publikacji należy wskazać rzeczywisty adres tej strony.
+
+    Ograniczenie badania: bezpośrednie pobranie pierwszej strony Bing było
+    niedostępne. Wykorzystano dostępne wyniki wyszukiwania i odczyty stron;
+    nie potwierdzono kolejności ani kompletu 10 witryn z pierwszej strony Bing.
+    Przeanalizowane motywy: kategorie, finds, linki produktowe, QC, wymiary,
+    warianty i koszty dostawy. Teksty poniżej są opracowaniem własnym.
+
+    Główna fraza: Wemimi spreadsheet.
+    Frazy pomocnicze: Wemimi finds; Wemimi linki do produktów;
+    Wemimi zdjęcia QC; Wemimi rozmiary; Wemimi poradnik zakupowy.
+    Frazy szczegółowe występują w kontekście porad, bez ukrytej listy słów.
+    Zdjęcia ilustrują temat; nie stanowią potwierdzenia oferty ani autentyczności.
+  -->
+  <style>
+    :root{
+      --ink:#18353d;
+      --muted:#536970;
+      --paper:#f7f4ed;
+      --white:#fff;
+      --line:#d9dfda;
+      --teal:#183d46;
+      --mint:#e0ece7;
+      --accent:#f0cb73;
+      --radius:18px;
+      --width:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      background:var(--paper);
+      color:var(--ink);
+      font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:inherit;text-underline-offset:4px}
+    a:hover{text-decoration-thickness:2px}
+    a:focus-visible,summary:focus-visible{
+      outline:3px solid #a3481c;
+      outline-offset:5px;
+    }
+    img{display:block;max-width:100%;height:auto}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.13;letter-spacing:-.035em;text-wrap:balance}
+    h1{font-size:clamp(2.7rem,6.4vw,5.6rem);font-weight:750}
+    h2{font-size:clamp(1.9rem,3.6vw,3.1rem)}
+    h3{font-size:1.22rem;letter-spacing:-.02em}
+    p+p{margin-top:14px}
+    .wrap{max-width:var(--width);margin-inline:auto;padding-inline:24px}
+    .top{
+      border-bottom:1px solid var(--line);
+      background:var(--paper);
+    }
+    .top-inner{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:20px;min-height:82px;
+    }
+    .logo{
+      font-size:1.5rem;font-weight:850;letter-spacing:-.055em;
+      text-decoration:none;white-space:nowrap;
+    }
+    .logo span{color:#497a6b}
+    .top-note{font-size:.79rem;text-transform:uppercase;letter-spacing:.13em}
+    .top-link{font-size:.9rem;font-weight:700}
+    .intro-bar{
+      display:flex;justify-content:space-between;gap:20px;
+      padding-block:20px;font-size:.8rem;letter-spacing:.06em;
+    }
+    .eyebrow{
+      display:block;font-size:.74rem;font-weight:800;
+      letter-spacing:.15em;text-transform:uppercase;
+    }
+    .categories{
+      padding:23px;background:var(--white);border:1px solid var(--line);
+      border-radius:var(--radius);
+    }
+    .category-heading{
+      display:flex;align-items:baseline;justify-content:space-between;
+      gap:15px;margin-bottom:16px;
+    }
+    .category-heading h2{font-size:1.2rem;letter-spacing:-.02em}
+    .category-heading p{font-size:.82rem;color:var(--muted)}
+    .category-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:9px}
+    .category-grid a{
+      display:flex;align-items:center;justify-content:space-between;gap:8px;
+      padding:12px 13px;min-height:52px;border:1px solid var(--line);
+      border-radius:9px;text-decoration:none;font-size:.84rem;font-weight:650;
+      transition:background .15s,border-color .15s;
+    }
+    .category-grid a:hover{background:var(--mint);border-color:#87a99a}
+    .category-grid a::after{content:"↗";flex:none;color:#56776e}
+    .hero{
+      display:grid;grid-template-columns:1.08fr .92fr;gap:55px;
+      align-items:center;padding-block:58px 66px;
+    }
+    .hero h1{margin:17px 0 24px}
+    .hero h1 span{display:block;color:#4f776a}
+    .lead{font-size:1.1rem;max-width:590px;color:var(--muted)}
+    .button{
+      display:inline-flex;justify-content:center;align-items:center;gap:16px;
+      min-height:50px;margin-top:26px;padding:12px 22px;
+      color:var(--white);background:var(--teal);border:1px solid var(--teal);
+      border-radius:8px;text-decoration:none;font-size:.92rem;font-weight:750;
+    }
+    .button:hover{background:#285763}
+    .fine{font-size:.79rem;color:var(--muted)}
+    .hero .fine{margin-top:15px;max-width:550px}
+    .hero-visual{
+      padding:13px 13px 0;background:#e7ddd0;border-radius:110px 18px 18px 18px;
+      overflow:hidden;
+    }
+    .hero-visual img{
+      width:100%;aspect-ratio:5/4;object-fit:cover;
+      border-radius:98px 10px 10px 10px;background:#ba242c;
+    }
+    .hero-visual figcaption{
+      display:flex;justify-content:space-between;gap:12px;
+      padding:15px 3px 17px;font-size:.75rem;color:#314b4c;
+    }
+    .answer{
+      display:grid;grid-template-columns:220px 1fr;gap:35px;
+      padding:31px 35px;background:var(--teal);color:var(--white);
+      border-radius:var(--radius);
+    }
+    .answer .eyebrow{color:var(--accent);margin-bottom:12px}
+    .answer h2{font-size:1.4rem}
+    .answer p{font-size:1.02rem;color:#e3eceb}
+    .section{padding-block:70px;border-bottom:1px solid var(--line)}
+    .section-head{
+      display:flex;justify-content:space-between;align-items:end;gap:30px;
+      margin-bottom:30px;
+    }
+    .section-head .eyebrow{margin-bottom:12px;color:#547468}
+    .section-head>p{max-width:390px;color:var(--muted);font-size:.94rem}
+    .columns{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .article{
+      padding:28px;border:1px solid var(--line);border-radius:var(--radius);
+      background:var(--white);
+    }
+    .article h3{margin-bottom:16px}
+    .article p,.article li{color:var(--muted);font-size:.94rem}
+    .article ul{margin:18px 0 0;padding-left:21px}
+    .article li+li{margin-top:9px}
+    .number{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:36px;height:36px;border-radius:50%;margin-bottom:20px;
+      background:var(--mint);font-size:.8rem;font-weight:800;
+    }
+    .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+    table{width:100%;border-collapse:collapse;background:var(--white);font-size:.92rem}
+    caption{text-align:left;padding:20px;font-weight:750;background:var(--mint)}
+    th,td{padding:17px 20px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+    thead th{font-size:.77rem;letter-spacing:.04em;text-transform:uppercase;background:#f0f3ef}
+    tbody th{width:22%;font-weight:750}
+    tr:last-child td,tr:last-child th{border-bottom:0}
+    td{color:var(--muted)}
+    .lookbook{display:grid;grid-template-columns:1fr 1fr 1fr;gap:22px}
+    .lookbook figure{min-width:0}
+    .image-box{
+      background:var(--white);border:1px solid var(--line);
+      border-radius:var(--radius);padding:18px;overflow:hidden;
+    }
+    .image-box img{width:100%;aspect-ratio:1/1;object-fit:contain}
+    .lookbook figcaption{padding:17px 2px 0}
+    .lookbook h3{font-size:1.05rem;margin-bottom:9px}
+    .lookbook p{font-size:.87rem;color:var(--muted)}
+    .lookbook a{display:inline-block;margin-top:12px;font-size:.85rem;font-weight:750}
+    .notice{margin-top:24px;font-size:.8rem;color:var(--muted);max-width:880px}
+    .journal{
+      display:grid;grid-template-columns:230px 1fr;gap:45px;
+      padding-block:34px;border-top:1px solid var(--line);
+    }
+    .journal:first-of-type{border-top:0;padding-top:5px}
+    .journal .eyebrow{color:#547468;margin-bottom:10px}
+    .journal h3{font-size:1.4rem}
+    .journal p{font-size:.96rem;color:var(--muted)}
+    .journal strong{color:var(--ink)}
+    .faq-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+    .faq-layout h2{margin:12px 0 20px}
+    .faq-layout>div>p{color:var(--muted)}
+    details{padding:20px 0;border-bottom:1px solid var(--line)}
+    details:first-child{padding-top:0}
+    summary{font-weight:750;cursor:pointer;padding-right:10px}
+    details p{margin-top:12px;color:var(--muted);font-size:.94rem}
+    .closing{
+      margin-top:55px;padding:35px;background:var(--accent);
+      border-radius:var(--radius);display:flex;align-items:center;
+      justify-content:space-between;gap:25px;
+    }
+    .closing h2{font-size:1.7rem}
+    .closing p{margin-top:10px;max-width:650px;font-size:.92rem}
+    .closing .button{margin:0;flex:none}
+    footer{padding-block:38px 45px}
+    .footer-row{display:flex;justify-content:space-between;gap:25px;margin-bottom:17px}
+    footer p{max-width:880px;color:var(--muted);font-size:.8rem}
+    @media(min-width:900px){
+      .section{content-visibility:auto;contain-intrinsic-size:auto 650px}
+    }
+    @media(max-width:950px){
+      .category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .hero{gap:28px}
+      .top-note{display:none}
+      .answer{grid-template-columns:1fr;gap:17px}
+      .faq-layout{gap:30px}
+      .journal{grid-template-columns:190px 1fr;gap:25px}
+    }
+    @media(max-width:650px){
+      .wrap{padding-inline:18px}
+      .top-inner{min-height:68px}
+      .logo{font-size:1.3rem}
+      .top-link{font-size:.78rem}
+      .intro-bar{font-size:.68rem;padding-block:15px}
+      .intro-bar span:last-child{display:none}
+      .categories{padding:16px}
+      .category-heading{display:block}
+      .category-heading p{margin-top:5px}
+      .category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+      .category-grid a{padding:10px;font-size:.78rem}
+      .hero{grid-template-columns:1fr;padding-block:35px 42px;gap:28px}
+      .hero h1{font-size:3rem}
+      .lead{font-size:1rem}
+      .hero-visual{border-top-left-radius:70px}
+      .hero-visual img{border-top-left-radius:58px;aspect-ratio:4/3}
+      .answer{padding:25px}
+      .section{padding-block:45px}
+      .section-head{display:block}
+      .section-head>p{margin-top:17px}
+      .columns,.lookbook,.faq-layout{grid-template-columns:1fr}
+      .article{padding:23px}
+      .lookbook{gap:32px}
+      .image-box img{max-height:320px}
+      .journal{grid-template-columns:1fr;gap:16px;padding-block:28px}
+      th,td{padding:13px;min-width:135px}
+      .closing{display:block;padding:26px;margin-top:35px}
+      .closing .button{margin-top:22px}
+      .footer-row{flex-wrap:wrap;gap:12px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *{transition:none!important}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"Wemimi spreadsheet — kategorie, rozmiary i poradnik QC",
+        "inLanguage":"pl",
+        "description":"Niezależny polski przewodnik po kategoriach produktów, wymiarach, zdjęciach QC i przygotowaniu listy zakupowej.",
+        "about":{
+          "@type":"Thing",
+          "name":"Wemimi spreadsheet",
+          "description":"Zestawienie linków i informacji pomocnych przy porównywaniu produktów."
+        }
+      },
+      {
+        "@type":"Article",
+        "headline":"Wemimi poradnik zakupowy: od znalezionego linku do świadomej decyzji",
+        "inLanguage":"pl",
+        "description":"Jak zapisać wariant produktu, porównać wymiary, sprawdzić zdjęcia QC i uwzględnić koszty dostawy.",
+        "author":{"@type":"Organization","name":"Redakcja przewodnika"},
+        "articleSection":"Poradnik zakupowy",
+        "articleBody":"Zapisz adres produktu, wybrany kolor i rozmiar. Porównaj wymiary z własną odzieżą lub obuwiem. Sprawdź zdjęcia konkretnego wariantu i poproś o brakujące ujęcia. Przed zakupem uwzględnij produkt, dostawę krajową, obsługę, transport międzynarodowy oraz ewentualne opłaty importowe."
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"pl",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"Czym jest Wemimi spreadsheet?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"To określenie listy lub katalogu linków do produktów, które można porównywać według kategorii, wariantu, wymiarów i dostępnych zdjęć. Ta strona jest przewodnikiem po polsku i odsyła do katalogu CAFANS; nie udostępnia pliku Excel."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Dokąd prowadzą przyciski i linki?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Linki kategorii prowadzą do odpowiednich działów cafans.com. Pozostałe odnośniki otwierają stronę główną https://www.cafans.com. Zakupy i kontakt ze sprzedawcą odbywają się poza tym przewodnikiem."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Jak sprawdzić rozmiar przed zakupem?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Porównaj wymiary produktu w centymetrach z dobrze dopasowaną rzeczą, którą już masz. W odzieży sprawdź szerokość, długość i rękaw, a w obuwiu sposób pomiaru długości wewnętrznej. Sam symbol rozmiaru nie wystarcza."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Czy zdjęcia QC potwierdzają autentyczność?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nie. Zdjęcia QC pomagają obejrzeć widoczny stan, wykończenie i zgodność wariantu. Nie stanowią samodzielnego dowodu autentyczności, składu materiału ani trwałości produktu."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Ile kosztuje dostawa do Polski?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nie ma jednej stawki. Koszt zależy od operatora, trasy, masy, wymiarów paczki i wybranych usług. Sprawdź aktualną wycenę dla konkretnej przesyłki oraz ewentualne opłaty importowe przed zapłatą."
+            }
+          },
+          {
+            "@type":"Question",
+            "name":"Czy to oficjalna strona Wemimi lub prezentowanych marek?",
+            "acceptedAnswer":{
+              "@type":"Answer",
+              "text":"Nie. To niezależny materiał informacyjny. Nazwy Wemimi, Nike, Gucci i Dior służą identyfikacji tematu i ilustracji; nie oznaczają współpracy, autoryzacji ani potwierdzenia dostępności produktów."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/uovoq/">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <a class="logo" href="https://www.cafans.com" aria-label="cafans.com — strona główna">cafans<span>.com</span></a>
+      <span class="top-note">Przewodnik zakupowy · po polsku</span>
+      <a class="top-link" href="https://www.cafans.com">Otwórz katalog ↗</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="intro-bar">
+      <span>WEMIMI / LINKI / ŚWIADOMY WYBÓR</span>
+      <span>Najpierw porównaj. Potem zdecyduj.</span>
+    </div>
+
+    <nav class="categories" aria-label="Kategorie produktów w CAFANS">
+      <div class="category-heading">
+        <h2>Zacznij od kategorii</h2>
+        <p>Bezpośrednie przejścia do działów CAFANS</p>
+      </div>
+      <div class="category-grid">
+        <a href="https://cafans.com/category-911-Shoes.html" aria-label="Shoes — buty">Shoes</a>
+        <a href="https://cafans.com/category-912-Hoodies%2FSweaters.html" aria-label="Hoodies/Sweaters — bluzy i swetry">Hoodies/Sweaters</a>
+        <a href="https://cafans.com/category-913-T-Shirts.html" aria-label="T-Shirts — koszulki">T-Shirts</a>
+        <a href="https://cafans.com/category-914-Jackets.html" aria-label="Jackets — kurtki">Jackets</a>
+        <a href="https://cafans.com/category-915-Pants%2FShorts.html" aria-label="Pants/Shorts — spodnie i szorty">Pants/Shorts</a>
+        <a href="https://cafans.com/category-916-Headwear.html" aria-label="Headwear — nakrycia głowy">Headwear</a>
+        <a href="https://cafans.com/category-917-Sets.html" aria-label="Sets — komplety">Sets</a>
+        <a href="https://cafans.com/category-918-underwear%2Funderpants.html" aria-label="Underwear/underpants — bielizna">Underwear/underpants</a>
+        <a href="https://cafans.com/category-919-Jersey.html" aria-label="Jersey — koszulki sportowe">Jersey</a>
+        <a href="https://cafans.com/category-920-Accessories.html" aria-label="Accessories — akcesoria">Accessories</a>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <span class="eyebrow">Mniej zgadywania przy zakupach</span>
+        <h1 id="hero-title">Wemimi spreadsheet<span>Wybór zaczyna się od szczegółów.</span></h1>
+        <p class="lead">Szukasz butów, ubrań lub dodatków? Zacznij od kategorii, porównaj konkretny wariant i zapisz najważniejsze wymiary. Ten przewodnik pomaga uporządkować decyzję, zanim przejdziesz do katalogu.</p>
+        <a class="button" href="https://www.cafans.com">Przeglądaj CAFANS <span aria-hidden="true">↗</span></a>
+        <p class="fine">Niezależny materiał informacyjny. Nie przyjmujemy tutaj zamówień ani płatności.</p>
+      </div>
+      <figure class="hero-visual">
+        <img
+          src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+          width="900"
+          height="720"
+          fetchpriority="high"
+          loading="eager"
+          decoding="async"
+          alt="Czerwony but sportowy Nike z jasnym znakiem Swoosh na czerwonym tle">
+        <figcaption>
+          <span>Obuwie / inspiracja wizualna</span>
+          <span>Zdjęcie ilustracyjne</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="answer" aria-labelledby="quick-answer">
+      <div>
+        <span class="eyebrow">Odpowiedź w skrócie</span>
+        <h2 id="quick-answer">Do czego służy taka lista?</h2>
+      </div>
+      <p><strong>Wemimi spreadsheet</strong> to określenie zestawienia linków i informacji o produktach. Przydatna lista pozwala porównać kategorię, rozmiar, kolor oraz dostępne zdjęcia. Tutaj znajdziesz wskazówki do takiego porównania i przejścia do CAFANS, a nie plik do pobrania ani potwierdzenie jakości oferty.</p>
+    </section>
+
+    <section class="section" aria-labelledby="finds-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">01 / Porządek na liście</span>
+          <h2 id="finds-title">Wemimi finds: co warto zapisać?</h2>
+        </div>
+        <p>Dobry wybór da się opisać konkretnie. Nazwa produktu i atrakcyjne zdjęcie to dopiero początek.</p>
+      </div>
+      <div class="columns">
+        <article class="article">
+          <span class="number" aria-hidden="true">01</span>
+          <h3>Wemimi linki do produktów: zachowaj kontekst</h3>
+          <p>Przy wyszukiwaniu linków Wemimi do butów zapisz model, kolor i wybrany rozmiar. Dla linków Wemimi do ubrań dodaj fason oraz wymiary z tabeli sprzedawcy. Wariant z fotografii może różnić się od domyślnie zaznaczonej opcji.</p>
+          <ul>
+            <li><strong>Wemimi sneakersy na co dzień:</strong> porównaj kształt, dopasowanie i przeznaczenie, zamiast kierować się samym wyglądem.</li>
+            <li><strong>Wemimi bluzy oversize:</strong> sprawdź szerokość pod pachami, długość i linię ramion.</li>
+            <li><strong>Wemimi koszulki z nadrukiem:</strong> obejrzyj zbliżenie grafiki i jej położenie na wybranym rozmiarze.</li>
+          </ul>
+        </article>
+        <article class="article">
+          <span class="number" aria-hidden="true">02</span>
+          <h3>Porównuj rzeczy o podobnym zastosowaniu</h3>
+          <p>Wemimi porównanie produktów ma sens, gdy obie propozycje mają spełniać podobną funkcję. Cienka warstwa na wiosnę i ocieplana kurtka wymagają innych kryteriów, nawet jeśli wyglądają podobnie.</p>
+          <ul>
+            <li><strong>Wemimi kurtki na przejściową pogodę:</strong> sprawdź opis podszewki, zapięcia i możliwość założenia warstw.</li>
+            <li><strong>Wemimi spodnie i szorty:</strong> zapisz pas, biodra, długość oraz informację o regulacji.</li>
+            <li><strong>Wemimi komplety sportowe:</strong> porównaj osobno wymiary góry i dołu.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sizes-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">02 / Wymiary przed etykietą</span>
+          <h2 id="sizes-title">Wemimi rozmiary: zmierz, zanim wybierzesz</h2>
+        </div>
+        <p>Porównuj pomiary wykonane w tych samych miejscach. Oznaczenia S, M czy EU 42 nie opisują całego dopasowania.</p>
+      </div>
+      <div class="table-wrap" role="region" aria-label="Tabela porównywania wymiarów" tabindex="0">
+        <table>
+          <caption>Wemimi tabela rozmiarów — praktyczna lista kontroli</caption>
+          <thead>
+            <tr>
+              <th scope="col">Rodzaj produktu</th>
+              <th scope="col">Co porównać</th>
+              <th scope="col">O co zapytać</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Buty</th>
+              <td>Wemimi długość wkładki: sprawdź sposób pomiaru i porównaj z wygodną parą.</td>
+              <td>Czy wymiar oznacza długość wkładki, czy zalecaną długość stopy? Jak szeroki jest model?</td>
+            </tr>
+            <tr>
+              <th scope="row">Bluzy i koszulki</th>
+              <td>Wemimi wymiary odzieży: szerokość pod pachami, długość pleców i rękaw.</td>
+              <td>Czy podano szerokość na płasko, czy pełny obwód? Jaka jest tolerancja pomiaru?</td>
+            </tr>
+            <tr>
+              <th scope="row">Spodnie</th>
+              <td>Wemimi pomiar spodni: pas bez rozciągania, biodra, stan i długość nogawki.</td>
+              <td>Czy pas jest elastyczny? Czy długość mierzono po stronie wewnętrznej czy zewnętrznej?</td>
+            </tr>
+            <tr>
+              <th scope="row">Nakrycia głowy</th>
+              <td>Wemimi czapki z regulacją: obwód, głębokość i zakres regulacji.</td>
+              <td>Czy rozmiar jest regulowany i jak działa zapięcie?</td>
+            </tr>
+            <tr>
+              <th scope="row">Akcesoria</th>
+              <td>Wemimi akcesoria i biżuteria: długość, szerokość, masa i deklarowany materiał.</td>
+              <td>Czy podano skład i rodzaj powłoki? Czy długość obejmuje zapięcie?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="visual-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">03 / Od całości do detalu</span>
+          <h2 id="visual-title">Ten sam styl. Inne pytania.</h2>
+        </div>
+        <p>Zdjęcia pokazują przykłady estetyki. Przy rzeczywistym zakupie oceniaj dokumentację wybranego egzemplarza.</p>
+      </div>
+      <div class="lookbook">
+        <figure>
+          <div class="image-box">
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&amp;fit=crop&amp;w=540&amp;q=75"
+              width="540"
+              height="540"
+              loading="lazy"
+              decoding="async"
+              alt="Czerwony sneaker Nike z jasną podeszwą, pokazany z boku">
+          </div>
+          <figcaption>
+            <h3>Nike / profil i podeszwa</h3>
+            <p>Sprawdź ujęcie z boku, przodu i tyłu. Pytaj o dopasowanie oraz widoczne łączenia materiałów.</p>
+            <a href="https://www.cafans.com">Otwórz katalog CAFANS ↗</a>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="image-box">
+            <img
+              src="https://cdn.theluxurycloset.com/uploads/opt/products/750x750/luxury-women-gucci-used-accessories-p1150835-001.jpg"
+              width="750"
+              height="750"
+              loading="lazy"
+              decoding="async"
+              alt="Beżowa czapka z daszkiem Gucci z wzorem GG i brązowym wykończeniem">
+          </div>
+          <figcaption>
+            <h3>Gucci / kształt i regulacja</h3>
+            <p>Oceń głębokość czapki, kształt daszka i tył z zapięciem. Sam wzór nie mówi, jak leży na głowie.</p>
+            <a href="https://www.cafans.com">Przeglądaj inspiracje w CAFANS ↗</a>
+          </figcaption>
+        </figure>
+        <figure>
+          <div class="image-box">
+            <img
+              src="https://assets.christiandior.com/is/image/diorprod/N1583DVOCYD301_E01?%24default_GHC%24=&amp;crop=234%2C96%2C1518%2C1492&amp;wid=600"
+              width="600"
+              height="600"
+              loading="lazy"
+              decoding="async"
+              alt="Naszyjnik Dior w złotym kolorze z napisem DIOR ozdobionym jasnymi kryształkami">
+          </div>
+          <figcaption>
+            <h3>Dior / długość i zapięcie</h3>
+            <p>Porównaj długość łańcuszka i zakres regulacji. Poproś o wyraźne zdjęcie ogniw oraz zapięcia.</p>
+            <a href="https://www.cafans.com">Zobacz katalog CAFANS ↗</a>
+          </figcaption>
+        </figure>
+      </div>
+      <p class="notice">Materiały wizualne mają charakter ilustracyjny i pochodzą z zewnętrznych serwerów. Nie potwierdzają dostępności tych modeli w CAFANS. Nazwy marek nie oznaczają oficjalnej współpracy ani uwierzytelnienia produktów.</p>
+    </section>
+
+    <section class="section" aria-labelledby="journal-title">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">04 / Krótkie poradniki</span>
+          <h2 id="journal-title">Wemimi poradnik zakupowy</h2>
+        </div>
+        <p>Trzy tematy, które pomagają zamienić zapisany link w przemyślaną decyzję.</p>
+      </div>
+
+      <article class="journal">
+        <div>
+          <span class="eyebrow">Poradnik / zdjęcia</span>
+          <h3>Wemimi zdjęcia QC: patrz na konkretny wariant</h3>
+        </div>
+        <div>
+          <p><strong>Jak sprawdzić zdjęcia QC Wemimi?</strong> Najpierw upewnij się, że fotografie dotyczą zamówionego koloru i rozmiaru. Następnie obejrzyj całą sylwetkę produktu, a dopiero później szwy, nadruki, zamki oraz krawędzie.</p>
+          <p>Wemimi kontrola jakości butów wymaga kilku kątów: pojedynczy profil nie pokazuje symetrii pary. Wemimi sprawdzanie nadruku na koszulce warto oprzeć na zdjęciu całego przodu i zbliżeniu grafiki. Przy Wemimi detalach kurtki zwróć uwagę na zapięcia, mankiety i podszewkę.</p>
+          <p>Jeżeli brakuje ważnego ujęcia, poproś o dodatkowe zdjęcie z konkretnym pytaniem. QC pomaga zauważyć widoczne niezgodności, ale nie dowodzi autentyczności, trwałości ani składu materiału.</p>
+        </div>
+      </article>
+
+      <article class="journal">
+        <div>
+          <span class="eyebrow">Poradnik / budżet</span>
+          <h3>Wemimi koszt przesyłki: licz całość</h3>
+        </div>
+        <div>
+          <p><strong>Cena produktu nie jest pełnym kosztem zakupu.</strong> Wemimi zakupy do Polski warto porównywać po uwzględnieniu dostawy krajowej, obsługi, pakowania, transportu międzynarodowego i ewentualnych opłat importowych.</p>
+          <p>Przy Wemimi wadze gabarytowej znaczenie mogą mieć wymiary paczki, a nie tylko kilogramy. Kurtka i para butów w pudełku mogą zajmować dużo miejsca; zasady naliczania sprawdź u wybranego operatora. Nie zakładaj, że usunięcie opakowania zawsze obniży końcową wycenę.</p>
+          <p>Wemimi planowanie paczki zacznij od zapisania potrzebnych rzeczy. Dostępność trasy, ograniczenia przewoźnika i aktualną cenę sprawdź dla konkretnej przesyłki przed płatnością.</p>
+        </div>
+      </article>
+
+      <article class="journal">
+        <div>
+          <span class="eyebrow">Poradnik / linki</span>
+          <h3>Gdy oferta się zmienia</h3>
+        </div>
+        <div>
+          <p><strong>Wemimi aktualne linki trzeba sprawdzać ponownie przed zakupem.</strong> Zapisana pozycja może zmienić warianty, opis lub dostępność. Porównaj bieżącą stronę z własną notatką, zamiast polegać na starym zrzucie ekranu.</p>
+          <p>Przy Wemimi wyborze koloru zwróć uwagę na nazwę wariantu oraz zdjęcie przypisane do opcji. Wemimi sprawdzanie sprzedawcy oprzyj na aktualnych informacjach i warunkach obsługi, bez traktowania samego miejsca na liście jako rekomendacji.</p>
+          <p>Jeśli Wemimi link nie działa, wróć do nazwy modelu i kategorii. Podobne zdjęcie nie gwarantuje identycznego produktu. Zanim zastąpisz ofertę inną, ponownie sprawdź wymiary, materiał i zasady zwrotu.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="faq-title">
+      <div class="faq-layout">
+        <div>
+          <span class="eyebrow">05 / Jasne odpowiedzi</span>
+          <h2 id="faq-title">Pytania przed pierwszym wyborem</h2>
+          <p>Najważniejsze informacje o tym przewodniku, rozmiarach i weryfikacji produktów.</p>
+        </div>
+        <div>
+          <details open>
+            <summary>Czym jest Wemimi spreadsheet?</summary>
+            <p>To określenie listy lub katalogu linków do produktów, które można porównywać według kategorii, wariantu, wymiarów i dostępnych zdjęć. Ta strona jest przewodnikiem po polsku i odsyła do katalogu CAFANS; nie udostępnia pliku Excel.</p>
+          </details>
+          <details>
+            <summary>Dokąd prowadzą przyciski i linki?</summary>
+            <p>Linki kategorii prowadzą do odpowiednich działów cafans.com. Pozostałe odnośniki otwierają stronę główną https://www.cafans.com. Zakupy i kontakt ze sprzedawcą odbywają się poza tym przewodnikiem.</p>
+          </details>
+          <details>
+            <summary>Jak sprawdzić rozmiar przed zakupem?</summary>
+            <p>Porównaj wymiary produktu w centymetrach z dobrze dopasowaną rzeczą, którą już masz. W odzieży sprawdź szerokość, długość i rękaw, a w obuwiu sposób pomiaru długości wewnętrznej. Sam symbol rozmiaru nie wystarcza.</p>
+          </details>
+          <details>
+            <summary>Czy zdjęcia QC potwierdzają autentyczność?</summary>
+            <p>Nie. Zdjęcia QC pomagają obejrzeć widoczny stan, wykończenie i zgodność wariantu. Nie stanowią samodzielnego dowodu autentyczności, składu materiału ani trwałości produktu.</p>
+          </details>
+          <details>
+            <summary>Ile kosztuje dostawa do Polski?</summary>
+            <p>Nie ma jednej stawki. Koszt zależy od operatora, trasy, masy, wymiarów paczki i wybranych usług. Sprawdź aktualną wycenę dla konkretnej przesyłki oraz ewentualne opłaty importowe przed zapłatą.</p>
+          </details>
+          <details>
+            <summary>Czy to oficjalna strona Wemimi lub prezentowanych marek?</summary>
+            <p>Nie. To niezależny materiał informacyjny. Nazwy Wemimi, Nike, Gucci i Dior służą identyfikacji tematu i ilustracji; nie oznaczają współpracy, autoryzacji ani potwierdzenia dostępności produktów.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <aside class="closing" aria-label="Przejdź do katalogu">
+      <div>
+        <h2>Masz już kryteria. Teraz porównaj produkty.</h2>
+        <p>Zapisz rozmiar, sprawdź wybrany wariant i zostaw na liście rzeczy, które pasują do Twoich potrzeb.</p>
+      </div>
+      <a class="button" href="https://www.cafans.com">Przejdź do CAFANS ↗</a>
+    </aside>
+  </main>
+
+  <footer class="wrap">
+    <div class="footer-row">
+      <a class="logo" href="https://www.cafans.com">cafans<span>.com</span></a>
+      <span class="fine">Wemimi spreadsheet · przewodnik po polsku</span>
+    </div>
+    <p>Strona ma charakter informacyjny. Nie gwarantuje jakości, dostępności, cen ani terminów dostawy. Warunki zakupu, płatności i zwrotu sprawdź bezpośrednio w wybranym serwisie. Prezentowane nazwy i znaki towarowe należą do ich właścicieli.</p>
+  </footer>
+</body>
+</html>
